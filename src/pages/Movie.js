@@ -1,13 +1,23 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import NavBar from "../components/NavBar";
 
-function Movie() {
+const Movie = () => {
+  // Assuming you have a state to hold movie information
+  const [movie, setMovie] = useState(null);
+
+  useEffect(() => {
+    // Fetch movie data based on the id from the URL
+    // Set the movie state with the fetched data
+  }, []);
+
   return (
     <>
+      <NavBar />
       <header>
-        {/* What component should go here? */}
+        <h1>Movie Page</h1>
       </header>
       <main>
-        {/* Movie info here! */}
+        {/* Movie information display here */}
       </main>
     </>
   );

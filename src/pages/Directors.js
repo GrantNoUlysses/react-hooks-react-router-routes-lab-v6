@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import React from "react";
+import NavBar from "../components/NavBar";
 
-function Directors() {
+const Directors = () => {
   return (
     <>
+      <NavBar />
       <header>
-        {/* What component should go here? */}
+        <h1>Directors Page</h1>
       </header>
       <main>
         {/* Director info here! */}
